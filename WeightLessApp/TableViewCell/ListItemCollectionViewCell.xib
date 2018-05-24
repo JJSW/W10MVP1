@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" restorationIdentifier="ListItemCollectionViewCell" reuseIdentifier="Cell" id="gTV-IL-0wX" customClass="ListItemCollectionViewCell" customModule="WeightLessApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="119" height="114"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="119" height="114"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="AKl-m1-9QM" customClass="CustomView" customModule="WeightLessApp" customModuleProvider="target">
+                        <rect key="frame" x="2" y="0.0" width="119" height="114"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_no_internet_connection" translatesAutoresizingMaskIntoConstraints="NO" id="rXh-NP-zIc">
+                                <rect key="frame" x="0.0" y="0.0" width="119" height="114"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.79684824486301364" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="119" id="7mX-98-A7F"/>
+                            <constraint firstItem="rXh-NP-zIc" firstAttribute="top" secondItem="AKl-m1-9QM" secondAttribute="top" id="9gS-od-yff"/>
+                            <constraint firstItem="rXh-NP-zIc" firstAttribute="leading" secondItem="AKl-m1-9QM" secondAttribute="leading" id="JOd-bB-DER"/>
+                            <constraint firstAttribute="height" constant="114" id="eqX-mN-RO6"/>
+                            <constraint firstAttribute="trailing" secondItem="rXh-NP-zIc" secondAttribute="trailing" id="nKG-8h-DjK"/>
+                            <constraint firstAttribute="bottom" secondItem="rXh-NP-zIc" secondAttribute="bottom" id="xag-dM-ZGD"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zOw-iJ-HIm" customClass="ImageLoader" customModule="WeightLessApp" customModuleProvider="target">
+                        <rect key="frame" x="1" y="0.0" width="119" height="114"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="114" id="PJn-h5-ATC"/>
+                            <constraint firstAttribute="width" constant="119" id="r0s-Nf-LZA"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkZ-CO-W2h" customClass="CustomButton" customModule="WeightLessApp" customModuleProvider="target">
+                        <rect key="frame" x="2" y="0.0" width="119" height="114"/>
+                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="119" id="7eI-7V-HeC"/>
+                            <constraint firstAttribute="height" constant="114" id="ysf-VV-rJS"/>
+                        </constraints>
+                        <state key="normal" image="ic_lock"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="zOw-iJ-HIm" secondAttribute="bottom" id="EhT-zg-E9f"/>
+                <constraint firstItem="zOw-iJ-HIm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="K7a-eC-pit"/>
+                <constraint firstItem="zOw-iJ-HIm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="O8d-eC-oA3"/>
+                <constraint firstItem="zOw-iJ-HIm" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" constant="1" id="VDZ-WZ-TrR"/>
+                <constraint firstItem="kkZ-CO-W2h" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Y9W-Dp-aMW"/>
+                <constraint firstItem="AKl-m1-9QM" firstAttribute="centerY" secondItem="zOw-iJ-HIm" secondAttribute="centerY" id="a6J-Rk-LDt"/>
+                <constraint firstItem="kkZ-CO-W2h" firstAttribute="centerX" secondItem="zOw-iJ-HIm" secondAttribute="centerX" constant="1" id="jWL-Xr-Cuu"/>
+                <constraint firstItem="zOw-iJ-HIm" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="klN-S7-1l5"/>
+                <constraint firstItem="AKl-m1-9QM" firstAttribute="top" secondItem="zOw-iJ-HIm" secondAttribute="top" id="qV4-jh-uxR"/>
+                <constraint firstAttribute="trailing" secondItem="zOw-iJ-HIm" secondAttribute="trailing" id="slU-SG-nau"/>
+                <constraint firstItem="kkZ-CO-W2h" firstAttribute="centerY" secondItem="zOw-iJ-HIm" secondAttribute="centerY" id="uJ2-SZ-DAn"/>
+                <constraint firstItem="AKl-m1-9QM" firstAttribute="bottom" secondItem="zOw-iJ-HIm" secondAttribute="bottom" id="vrV-Vn-8CO"/>
+                <constraint firstItem="AKl-m1-9QM" firstAttribute="centerX" secondItem="zOw-iJ-HIm" secondAttribute="centerX" constant="1" id="wgN-x7-Ph8"/>
+            </constraints>
+            <size key="customSize" width="119" height="114"/>
+            <connections>
+                <outlet property="BackGround_Height" destination="eqX-mN-RO6" id="WRv-ig-xGT"/>
+                <outlet property="BackGround_Width" destination="7mX-98-A7F" id="48I-o7-LWc"/>
+                <outlet property="BackgroundVw" destination="AKl-m1-9QM" id="lqv-ED-kNu"/>
+                <outlet property="Btn_Lock" destination="kkZ-CO-W2h" id="P7b-dV-nDU"/>
+                <outlet property="Btn_LockHeight" destination="ysf-VV-rJS" id="3Zm-yR-WJa"/>
+                <outlet property="Btn_LockWidth" destination="7eI-7V-HeC" id="15q-ow-YvM"/>
+                <outlet property="imgVW" destination="zOw-iJ-HIm" id="BYd-rZ-DWK"/>
+                <outlet property="imgVW_Height" destination="PJn-h5-ATC" id="2GL-zz-ngi"/>
+                <outlet property="imgVW_Width" destination="r0s-Nf-LZA" id="Cyh-sI-rRd"/>
+                <outlet property="lbl_noInternet" destination="rXh-NP-zIc" id="uQt-bv-WRE"/>
+            </connections>
+            <point key="canvasLocation" x="67.5" y="137"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_lock" width="50" height="50"/>
+        <image name="ic_no_internet_connection" width="170" height="170"/>
+    </resources>
+</document>

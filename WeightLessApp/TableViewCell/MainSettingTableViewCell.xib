@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MainSettingTableViewCell" customModule="WeightLessApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZV-Og-teg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkX-Fn-FDy">
+                                <rect key="frame" x="20" y="13.5" width="117" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" text="John Die" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lQ2-SP-fHI">
+                                <rect key="frame" x="147" y="6.5" width="143" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="I4q-xJ-sCG"/>
+                                </constraints>
+                                <color key="textColor" red="0.10145654530000001" green="0.3511914015" blue="0.60688441989999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Next_Gray" translatesAutoresizingMaskIntoConstraints="NO" id="SNo-Y4-jeB">
+                                <rect key="frame" x="307" y="16.5" width="5" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="5" id="GCC-aZ-dsh"/>
+                                    <constraint firstAttribute="height" constant="10" id="tFA-Yu-G0R"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lQ2-SP-fHI" firstAttribute="leading" secondItem="kkX-Fn-FDy" secondAttribute="trailing" constant="10" id="0fn-GJ-Wa7"/>
+                            <constraint firstItem="kkX-Fn-FDy" firstAttribute="centerY" secondItem="FZV-Og-teg" secondAttribute="centerY" id="4m2-jV-h2w"/>
+                            <constraint firstAttribute="trailing" secondItem="lQ2-SP-fHI" secondAttribute="trailing" constant="30" id="BUL-oN-Dya"/>
+                            <constraint firstItem="lQ2-SP-fHI" firstAttribute="centerY" secondItem="kkX-Fn-FDy" secondAttribute="centerY" id="GG0-g3-1St"/>
+                            <constraint firstItem="SNo-Y4-jeB" firstAttribute="centerY" secondItem="lQ2-SP-fHI" secondAttribute="centerY" id="L15-YS-JWA"/>
+                            <constraint firstAttribute="trailing" secondItem="SNo-Y4-jeB" secondAttribute="trailing" constant="8" id="Qr0-Ch-HtL"/>
+                            <constraint firstItem="kkX-Fn-FDy" firstAttribute="leading" secondItem="FZV-Og-teg" secondAttribute="leading" constant="20" id="lij-rg-rhv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="FZV-Og-teg" secondAttribute="trailing" id="Cz6-Xe-c7y"/>
+                    <constraint firstItem="FZV-Og-teg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="FLG-WE-cfh"/>
+                    <constraint firstItem="FZV-Og-teg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HuG-j0-juS"/>
+                    <constraint firstAttribute="bottom" secondItem="FZV-Og-teg" secondAttribute="bottom" id="h7C-Ew-2PP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="icon_Next" destination="SNo-Y4-jeB" id="d9E-Ui-wmN"/>
+                <outlet property="lbl_title" destination="kkX-Fn-FDy" id="bPG-jV-eng"/>
+                <outlet property="txt_Value" destination="lQ2-SP-fHI" id="zyh-PG-JJf"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Next_Gray" width="11" height="19"/>
+    </resources>
+</document>

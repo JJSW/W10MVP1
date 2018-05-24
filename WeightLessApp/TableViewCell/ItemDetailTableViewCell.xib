@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ItemDetailTableViewCell" customModule="WeightLessApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2i-SC-1XL">
+                        <rect key="frame" x="30" y="0.0" width="195" height="43.5"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kR-IA-fPQ">
+                        <rect key="frame" x="230" y="0.0" width="60" height="43.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="vl7-Wn-d6C"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="m2i-SC-1XL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="2mx-ia-dXB"/>
+                    <constraint firstAttribute="trailing" secondItem="4kR-IA-fPQ" secondAttribute="trailing" constant="30" id="7y9-fw-d5v"/>
+                    <constraint firstAttribute="bottom" secondItem="m2i-SC-1XL" secondAttribute="bottom" id="L4g-Dn-s6b"/>
+                    <constraint firstItem="4kR-IA-fPQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="UHh-Iw-2zM"/>
+                    <constraint firstAttribute="bottom" secondItem="4kR-IA-fPQ" secondAttribute="bottom" id="cXh-wu-yfP"/>
+                    <constraint firstItem="4kR-IA-fPQ" firstAttribute="leading" secondItem="m2i-SC-1XL" secondAttribute="trailing" constant="5" id="h0S-eq-3LE"/>
+                    <constraint firstItem="m2i-SC-1XL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pRa-FQ-sXs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lbl_Key" destination="m2i-SC-1XL" id="hxm-tT-1rk"/>
+                <outlet property="lbl_Value" destination="4kR-IA-fPQ" id="UMM-HV-V0o"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

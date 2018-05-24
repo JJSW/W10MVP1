@@ -1,0 +1,6 @@
+framework module Pods_WeightLessAppTests {
+  umbrella header "Pods-WeightLessAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
