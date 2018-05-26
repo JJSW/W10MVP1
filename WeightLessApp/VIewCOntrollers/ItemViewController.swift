@@ -99,7 +99,7 @@ class ItemViewController: UIViewController, UITableViewDelegate, UITableViewData
             if(lbl_Description.text == "") {
                 HEADERView.frame.size.height = self.view.bounds.size.width + 180
             } else {
-                HEADERView.frame.size.height = self.view.bounds.size.width + 180 + 100
+                HEADERView.frame.size.height = self.view.bounds.size.width + 180 + 20
             }
             self.img_item.loadImageWithUrl(url)
             DropShadowOnView(view: img_item)
@@ -139,14 +139,14 @@ class ItemViewController: UIViewController, UITableViewDelegate, UITableViewData
             h = (CGFloat((hInt)/(fInt + gInt + hInt)))
         }
         self.lbl_Protein_Percentage.text = "\(String(format: "%.1f", (h*100)))%"
-        keyArray = ["Calories","Protein (g)","Carbs (g)","Fiber (g)","Sugars (g)","Alcohol Sugars (g)","Fat (g)","Saturated (g)","Monosaturated (g)","Polyunsaturated (g)","Trans (g)","Cholestrol (mg)","Alcohol Fats (g)","Vitamin A (IU)","Vitamin C (mg)","Calcium (mg)","Iron (mg)","Potassium (mg)","Sodium (mg)"]
+        keyArray = ["Weight","Protein (g)","Carbs (g)","Fiber (g)","Sugars (g)","Alcohol Sugars (g)","Fat (g)","Saturated (g)","Monosaturated (g)","Polyunsaturated (g)","Trans (g)","Cholestrol (mg)","Alcohol Fats (g)","Vitamin A (IU)","Vitamin C (mg)","Calcium (mg)","Iron (mg)","Potassium (mg)","Sodium (mg)"]
         
         if(Categories.Calcium == nil) {
             Categories.Calcium = "0"
         }
         
         ValueArray = [
-            "\(String(format: "%.1f",(i*CGFloat((Categories.Calories! as NSString).floatValue)))) ",
+            "\((UserDefaults.standard.integer(forKey: "DailyTarget"))) ",
             "\(String(format: "%.1f", (i*CGFloat((Categories.Protein! as NSString).floatValue)))) ",
             "\(String(format: "%.1f", (i*CGFloat((Categories.Carbs! as NSString).floatValue)))) ","\(String(format: "%.1f", (i*CGFloat((Categories.Fibers! as NSString).floatValue)))) ",
             "\(String(format: "%.1f", (i*CGFloat((Categories.Sugars! as NSString).floatValue)))) ",
@@ -165,7 +165,8 @@ class ItemViewController: UIViewController, UITableViewDelegate, UITableViewData
             "\(String(format: "%.1f", (i*CGFloat((Categories.Potassium! as NSString).floatValue)))) ",
             "\(String(format: "%.1f", (i*CGFloat((Categories.Sodium! as NSString).floatValue)))) "
         ]
-        
+        print(ValueArray)
+        print("Protein :- \(Categories.Protein!)")
         self.tbl.delegate = self
         self.tbl.dataSource = self
         let nib = UINib(nibName: "ItemDetailTableViewCell", bundle: nil)
@@ -252,14 +253,14 @@ class ItemViewController: UIViewController, UITableViewDelegate, UITableViewData
             h = (CGFloat((hInt)/(fInt + gInt + hInt)))
         }
         self.lbl_Protein_Percentage.text = "\(String(format: "%.1f", (h*100)))%"
-            keyArray = ["Calories","Protein (g)","Carbs (g)","Fiber (g)","Sugars (g)","Alcohol Sugars (g)","Fat (g)","Saturated (g)","Monosaturated (g)","Polyunsaturated (g)","Trans (g)","Cholestrol (mg)","Alcohol Fats (g)","Vitamin A (IU)","Vitamin C (mg)","Calcium (mg)","Iron (mg)","Potassium (mg)","Sodium (mg)"]
+            keyArray = ["Weight","Protein (g)","Carbs (g)","Fiber (g)","Sugars (g)","Alcohol Sugars (g)","Fat (g)","Saturated (g)","Monosaturated (g)","Polyunsaturated (g)","Trans (g)","Cholestrol (mg)","Alcohol Fats (g)","Vitamin A (IU)","Vitamin C (mg)","Calcium (mg)","Iron (mg)","Potassium (mg)","Sodium (mg)"]
             
             if(Categories.Calcium == nil) {
                 Categories.Calcium = "0"
             }
             
             ValueArray = [
-                "\(String(format: "%.1f",(i*CGFloat((Categories.Calories! as NSString).floatValue)))) ",
+                "\((UserDefaults.standard.integer(forKey: "DailyTarget"))) ",
                 "\(String(format: "%.1f", (i*CGFloat((Categories.Protein! as NSString).floatValue)))) ",
                 "\(String(format: "%.1f", (i*CGFloat((Categories.Carbs! as NSString).floatValue)))) ","\(String(format: "%.1f", (i*CGFloat((Categories.Fibers! as NSString).floatValue)))) ",
                 "\(String(format: "%.1f", (i*CGFloat((Categories.Sugars! as NSString).floatValue)))) ",
@@ -278,7 +279,7 @@ class ItemViewController: UIViewController, UITableViewDelegate, UITableViewData
                 "\(String(format: "%.1f", (i*CGFloat((Categories.Potassium! as NSString).floatValue)))) ",
                 "\(String(format: "%.1f", (i*CGFloat((Categories.Sodium! as NSString).floatValue)))) "
             ]
-            
+        print("Protein :- \(Categories.Protein!)")
         self.tbl.delegate = self
         self.tbl.dataSource = self
         let nib = UINib(nibName: "ItemDetailTableViewCell", bundle: nil)

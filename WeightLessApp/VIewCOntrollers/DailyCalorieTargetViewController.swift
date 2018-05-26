@@ -50,6 +50,7 @@ class DailyCalorieTargetViewController: UIViewController, iCarouselDataSource, i
     func numberOfItems(in carousel: iCarousel) -> Int {
         return items.count
     }
+    
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
         var label: UILabel
         var itemView: UIImageView
@@ -80,7 +81,7 @@ class DailyCalorieTargetViewController: UIViewController, iCarouselDataSource, i
                 itemsPerDayCount = itemsPerDay[index]
                 DailyTargetIndexCount = index
                 itemsCountDayCount = Float(itemsCountDay[index])
-                lbl_DailyCalorie.text = "\(itemsPerDay[index]) Calories"
+                lbl_DailyCalorie.text = "\(itemsPerDay[index]) Weight"
             }
             label.textColor = .black 
             label.tag = 1

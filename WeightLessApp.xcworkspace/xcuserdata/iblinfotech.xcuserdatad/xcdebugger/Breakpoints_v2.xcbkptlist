@@ -60,7 +60,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeightLessApp/MessageManager.swift"
-            timestampString = "548771778.613516"
+            timestampString = "549008334.654963"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "212"
@@ -76,7 +76,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeightLessApp/VIewCOntrollers/SignUpViewController.swift"
-            timestampString = "548771778.613574"
+            timestampString = "549008334.655274"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "245"
@@ -92,7 +92,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeightLessApp/VIewCOntrollers/SignUpViewController.swift"
-            timestampString = "548771778.613615"
+            timestampString = "549008334.655314"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "238"
@@ -108,7 +108,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeightLessApp/VIewCOntrollers/SignUpViewController.swift"
-            timestampString = "548771778.613652"
+            timestampString = "549008334.655349"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "344"
@@ -124,7 +124,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeightLessApp/VIewCOntrollers/InAppPurchase.swift"
-            timestampString = "548771778.613691"
+            timestampString = "549008334.6553839"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "156"
@@ -140,13 +140,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeightLessApp/VIewCOntrollers/DailyCalorieTargetViewController.swift"
-            timestampString = "548771778.613732"
+            timestampString = "549008334.6554199"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "updateArtist()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -156,13 +156,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeightLessApp/VIewCOntrollers/DailyCalorieTargetViewController.swift"
-            timestampString = "548771778.6137691"
+            timestampString = "549008334.655453"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "updateArtist()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeightLessApp/VIewCOntrollers/ItemViewController.swift"
+            timestampString = "549008334.655489"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "263"
+            endingLineNumber = "263"
+            landmarkName = "GetCategory()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeightLessApp/VIewCOntrollers/ItemViewController.swift"
+            timestampString = "549008334.655527"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
